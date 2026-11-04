@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympiad Excellence & Advanced Problem Lab | Olympiad Foundation</title>
+  <meta name="description"
+    content="Experience advanced Olympiad problem clinics, research-grade seminars, and international competition training tracks at Olympiad Foundation Coaching Center.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo/brand-logo.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0A2540',
+              'navy-dark': '#06182C',
+              'navy-light': '#133E87',
+              gold: '#D97706',
+              'gold-bright': '#F59E0B',
+              'gold-subtle': '#FEF3C7'
+            },
+            dark: {
+              bg: '#000000',
+              surface: '#0A0A0A',
+              card: '#050505',
+              border: '#27272A'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Global Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Global Application Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body class="bg-white dark:bg-black text-slate-900 dark:text-white transition-colors duration-200">
+
+  <!-- ======================================================================
+       BRANDED PRELOADER
+       ====================================================================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo-wrapper">
+        <div class="loader-spinner-ring"></div>
+        <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Foundation Coaching Center Logo" class="loader-logo">
+      </div>
+      <div>
+        <p class="font-heading font-extrabold text-lg text-brand-navy dark:text-white tracking-tight">Olympiad
+          Foundation</p>
+        <p class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Coaching Center</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FIXED COMPACT HEADER (SINGLE LINE ON DESKTOP)
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+
+      <!-- Brand Logo + Identity (Clicks to index.html) -->
+      <a href="index.html" class="header-brand" aria-label="Olympiad Foundation Home">
+        <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Foundation Crest" class="header-logo">
+        <div class="header-brand-text">
+          <span class="header-brand-title">Olympiad Foundation</span>
+          <span class="header-brand-sub">Coaching Center</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation - EXACTLY 6 PRIMARY ITEMS -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+
+        <!-- 1. Home with Click-Only Dropdown -->
+        <div class="nav-dropdown">
+          <button type="button" class="nav-link dropdown-trigger active" aria-haspopup="true" aria-expanded="false"
+            id="homeDropdownTrigger">
+            <span>Home</span>
+            <svg class="dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="dropdown-menu" role="menu" aria-labelledby="homeDropdownTrigger">
+            <a href="index.html" class="dropdown-item" role="menuitem">
+              <svg class="w-4 h-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              <span>Home 1 (Foundation)</span>
+            </a>
+            <a href="home-2.html" class="dropdown-item active" role="menuitem">
+              <svg class="w-4 h-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              <span>Home 2 (Excellence)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. About -->
+        <a href="about.html" class="nav-link">About</a>
+
+        <!-- 3. Programs -->
+        <a href="programs.html" class="nav-link">Programs</a>
+
+        <!-- 4. Results -->
+        <a href="results.html" class="nav-link">Results</a>
+
+        <!-- 5. Dashboard -->
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+        <!-- 6. Contact (Directly visible) -->
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Action Controls -->
+      <div class="header-actions">
+        <!-- RTL/LTR Toggle -->
+        <button type="button" class="action-icon-btn rtl-toggle-btn" aria-label="Toggle text direction (RTL or LTR)"
+          title="Toggle Direction">
+          <span class="rtl-indicator-label font-bold text-xs">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="action-icon-btn theme-toggle-btn" aria-label="Toggle Dark Mode (#000000)"
+          title="Toggle Theme">
+          <svg class="w-5 h-5 theme-icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg class="w-5 h-5 theme-icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- Compact Student Login Button -->
+        <a href="login.html" class="btn-login" aria-label="Student Portal Login">
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+          </svg>
+          <span>Login</span>
+        </a>
+
+        <!-- Header CTA Button -->
+        <a href="contact.html" class="btn-header-cta" aria-label="Admissions Registration">
+          <span>Apply 2026</span>
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button type="button" class="mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE MENU DRAWER
+       ====================================================================== -->
+  <div class="mobile-drawer-overlay" aria-hidden="true">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+
+      <!-- Drawer Header -->
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="flex items-center gap-3 text-decoration-none">
+          <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Crest"
+            class="w-10 h-10 object-contain rounded bg-white p-1 shadow-sm">
+          <div>
+            <h2 class="font-heading font-bold text-sm text-brand-navy dark:text-white leading-tight">Olympiad Foundation
+            </h2>
+            <p class="text-[10px] font-semibold text-brand-gold uppercase tracking-wider">Coaching Center</p>
+          </div>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close navigation menu">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Drawer Body -->
+      <div class="mobile-drawer-body">
+        <ul class="mobile-nav-list">
+          <li class="mobile-accordion">
+            <button type="button" class="mobile-nav-link mobile-accordion-trigger active" aria-expanded="false">
+              <span>Home</span>
+              <svg class="w-4 h-4 accordion-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="mobile-accordion-content">
+              <a href="index.html" class="mobile-sub-link">Home 1 (Foundation)</a>
+              <a href="home-2.html" class="mobile-sub-link active">Home 2 (Excellence)</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="mobile-nav-link">About</a></li>
+          <li><a href="programs.html" class="mobile-nav-link">Programs</a></li>
+          <li><a href="results.html" class="mobile-nav-link">Results</a></li>
+          <li><a href="dashboard.html" class="mobile-nav-link">Dashboard</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="mobile-drawer-footer">
+        <div class="mobile-controls-row">
+          <button type="button" class="mobile-control-btn theme-toggle-btn" aria-label="Toggle Dark Mode">
+            <svg class="w-4 h-4 theme-icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg class="w-4 h-4 theme-icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <span>Theme</span>
+          </button>
+
+          <button type="button" class="mobile-control-btn rtl-toggle-btn" aria-label="Toggle Direction">
+            <span class="rtl-indicator-label font-bold text-xs">RTL</span>
+            <span>Dir</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 w-full">
+          <a href="login.html" class="btn-login justify-center">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            </svg>
+            <span>Login</span>
+          </a>
+          <a href="contact.html" class="btn-header-cta justify-center">
+            <span>Apply 2026</span>
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 6 FRESH SECTIONS FOR HOME 2
+       ====================================================================== -->
+  <main>
+
+    <!-- SECTION 1: PANORAMIC HERO WITH FULL VIEWPORT HEIGHT & CRISP CENTERED TEXT OVERLAY -->
+    <section id="hero2" class="hero-overlay-section hero-fullscreen hero-bg-home2">
+      <div class="site-container w-full flex flex-col items-center text-center">
+        <div class="max-w-3xl mx-auto flex flex-col items-center text-center">
+
+          <div class="inline-flex items-center gap-2 section-badge-light mb-4 mx-auto">
+            <svg class="w-4 h-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+            <span>Super-50 Advanced Olympiad Accelerator</span>
+          </div>
+
+          <h1 class="hero-overlay-title text-center mx-auto">
+            Where Theoretical Rigor Meets <span class="text-brand-gold">Global Victory</span>
+          </h1>
+
+          <p class="hero-overlay-subtitle mt-4 text-center mx-auto">
+            Elite problem clinics, non-routine proof analysis, and direct mentorship by international medalists.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-4 mt-7">
+            <a href="#problem-clinic" class="btn-primary">
+              <span>Explore Problem Clinics</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </a>
+            <a href="#competition-matrix" class="btn-outline-light">
+              <svg class="w-4 h-4 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>2026 Competition Calendar</span>
+            </a>
+          </div>
+
+          <!-- 3 Compact Credential Counters -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 mt-8 max-w-xl mx-auto text-center">
+            <div class="hero-overlay-stat-card text-center">
+              <p class="font-heading font-extrabold text-2xl text-brand-gold">50 Only</p>
+              <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mt-0.5">Super-50 Fellows</p>
+            </div>
+            <div class="hero-overlay-stat-card text-center">
+              <p class="font-heading font-extrabold text-2xl text-white">142+</p>
+              <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mt-0.5">Global Medals</p>
+            </div>
+            <div class="hero-overlay-stat-card col-span-2 sm:col-span-1 text-center">
+              <p class="font-heading font-extrabold text-2xl text-brand-gold">100%</p>
+              <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider mt-0.5">Medalist Mentors</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 4-STAGE ACADEMIC PROGRESSION ROADMAP (Horizontal Timeline Flow) -->
+    <section id="roadmap"
+      class="py-16 md:py-24 border-b border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-black">
+      <div class="site-container">
+
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+          <div class="section-badge mx-auto">Structured Progression</div>
+          <h2 class="section-title text-slate-900 dark:text-white">The 4-Stage Pathway to Global Medals</h2>
+          <p class="section-subtitle text-slate-700 dark:text-slate-300">
+            A systematic journey transforming curiosity into international podium qualifications.
+          </p>
+        </div>
+
+        <!-- Progressive 4-Step Connected Horizontal Timeline -->
+        <div class="roadmap-timeline">
+
+          <!-- Step 1 -->
+          <div class="roadmap-step">
+            <div class="roadmap-icon-bubble">01</div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Grades 6–7</span>
+            <h3 class="font-heading font-bold text-lg text-slate-900 dark:text-white mt-1">Foundation Ignition</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+              Non-routine mathematical puzzles, pattern recognition, and scientific inquiry.
+            </p>
+            <div
+              class="mt-auto pt-3 border-t border-slate-100 dark:border-zinc-800 text-[11px] font-semibold text-brand-navy dark:text-white">
+              Target: NMTC Primary & Junior Science Spark
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-step">
+            <div class="roadmap-icon-bubble">02</div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Grades 8–9</span>
+            <h3 class="font-heading font-bold text-lg text-slate-900 dark:text-white mt-1">National Qualifier Track</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+              Euclidean geometry proofs, elementary number theory, combinatorics, and kinematics.
+            </p>
+            <div
+              class="mt-auto pt-3 border-t border-slate-100 dark:border-zinc-800 text-[11px] font-semibold text-brand-navy dark:text-white">
+              Target: PRMO Qualification & NSEJS Rank
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-step">
+            <div class="roadmap-icon-bubble">03</div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Grades 10–11</span>
+            <h3 class="font-heading font-bold text-lg text-slate-900 dark:text-white mt-1">Advanced Camp Prep</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+              4.5-hour Olympiad simulation protocols, functional equations, and lab kinetics.
+            </p>
+            <div
+              class="mt-auto pt-3 border-t border-slate-100 dark:border-zinc-800 text-[11px] font-semibold text-brand-navy dark:text-white">
+              Target: INMO, INPhO & INChO State Top 10
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-step">
+            <div class="roadmap-icon-bubble">04</div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Grade 12</span>
+            <h3 class="font-heading font-bold text-lg text-slate-900 dark:text-white mt-1">Global Delegation</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+              OCSC training camp residency, international mock trials, and team selection drills.
+            </p>
+            <div
+              class="mt-auto pt-3 border-t border-slate-100 dark:border-zinc-800 text-[11px] font-semibold text-brand-navy dark:text-white">
+              Target: International IMO / IPhO / IChO Team
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: OLYMPIAD PROBLEM CLINICS & LABS (Simple 4-Image Grid Layout) -->
+    <section id="problem-clinic" class="py-16 md:py-24 border-b border-slate-200 dark:border-zinc-800">
+      <div class="site-container">
+
+        <!-- Section Header (Centered, Clean & Concise) -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <div class="section-badge mx-auto">Interactive Problem Lab</div>
+          <h2 class="section-title text-slate-900 dark:text-white">
+            Daily Problem Clinics &amp; <span class="text-brand-gold">Proof Defense</span>
+          </h2>
+          <p class="section-subtitle text-slate-700 dark:text-slate-300">
+            Active proof construction and live analytical problem solving across four core clinic formats.
+          </p>
+        </div>
+
+        <!-- 4-Card Even Grid with 4 High-Quality Images & Minimal Text -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1: Live Whiteboard Defense -->
+          <div class="problem-lab-card">
+            <div class="problem-lab-image-wrap">
+              <img src="assets/images/sections/p15.jpg"
+                alt="Live mathematical theorem proof on chalkboard during clinic" loading="lazy">
+              <span class="problem-lab-badge">Clinic 01</span>
+            </div>
+            <div class="problem-lab-body">
+              <div>
+                <h3 class="problem-lab-title">Whiteboard Defense</h3>
+                <p class="problem-lab-desc">Students defend step-by-step logic live before mentors and peers.</p>
+              </div>
+              <div class="problem-lab-tag">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Daily 4:00 PM Rounds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Proof Drafting & Derivation -->
+          <div class="problem-lab-card">
+            <div class="problem-lab-image-wrap">
+              <img src="assets/images/about/p16.jpg" alt="Euclidean geometry drafting and formal theorem calculations"
+                loading="lazy">
+              <span class="problem-lab-badge">Clinic 02</span>
+            </div>
+            <div class="problem-lab-body">
+              <div>
+                <h3 class="problem-lab-title">Proof Construction</h3>
+                <p class="problem-lab-desc">Rigorous formal derivations replacing memorized test formulas.</p>
+              </div>
+              <div class="problem-lab-tag">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>PRMO &amp; RMO Focus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Non-Routine Question Bank -->
+          <div class="problem-lab-card">
+            <div class="problem-lab-image-wrap">
+              <img src="assets/images/hero/p17.jpg" alt="Advanced physics optics and experimental inquiry laboratory"
+                loading="lazy">
+              <span class="problem-lab-badge">Clinic 03</span>
+            </div>
+            <div class="problem-lab-body">
+              <div>
+                <h3 class="problem-lab-title">Routine Question Bank</h3>
+                <p class="problem-lab-desc">Hand-curated problem sets from IMO Shortlists and USAMO archives.</p>
+              </div>
+              <div class="problem-lab-tag">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+                <span>8,500+ Curated Problems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Error Diagnostic Logs -->
+          <div class="problem-lab-card">
+            <div class="problem-lab-image-wrap">
+              <img src="assets/images/gallery/p18.jpg"
+                alt="Dedicated high-speed computer terminals for national CBT testing" loading="lazy">
+              <span class="problem-lab-badge">Clinic 04</span>
+            </div>
+            <div class="problem-lab-body">
+              <div>
+                <h3 class="problem-lab-title">Error Diagnostic Logs</h3>
+                <p class="problem-lab-desc">Algorithmic error logs tracking conceptual blind spots and time leaks.</p>
+              </div>
+              <div class="problem-lab-tag">
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <span>Weekly 1-on-1 Review</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Clean Centered Action -->
+        <div class="text-center mt-12">
+          <a href="dashboard.html#practice-tests" class="btn-primary">
+            <span>Access Student Problem Portal</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: GLOBAL COMPETITION MATRIX & CALENDAR (Simple Horizontal Stream Strips) -->
+    <section id="competition-matrix"
+      class="py-16 md:py-24 border-b border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-black">
+      <div class="site-container">
+
+        <!-- Section Header (Centered, Clean & Concise) -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <div class="section-badge mx-auto">National Benchmark</div>
+          <h2 class="section-title text-slate-900 dark:text-white">
+            Olympiad Competition Matrix &amp; <span class="text-brand-gold">Roadmap</span>
+          </h2>
+          <p class="section-subtitle text-slate-700 dark:text-slate-300">
+            Official qualification pathways, exam tiers, and global final podiums for 2026.
+          </p>
+        </div>
+
+        <!-- Simple Horizontal Stream Strips (Clean, Minimal, Non-Repeating) -->
+        <div class="stream-strip-list">
+
+          <!-- Stream 1: Mathematics Olympiad -->
+          <div class="stream-strip-row">
+            <div class="stream-strip-visual">
+              <img src="assets/images/sections/p19.jpg" alt="Mathematics Olympiad derivations" loading="lazy">
+              <span class="stream-strip-badge">Grades 8–12</span>
+            </div>
+            <div class="stream-strip-main">
+              <h3 class="stream-strip-title">Mathematics Olympiad</h3>
+              <div class="stream-strip-pipeline">
+                <span class="stream-pipeline-stage">PRMO (Sep)</span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">RMO (Oct)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">INMO (Feb)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage font-bold text-brand-gold">IMO Final</span></span>
+              </div>
+            </div>
+            <div class="stream-strip-side">
+              <span class="stream-strip-target-pill">Target: IMO Podium</span>
+              <a href="programs.html#junior-division" class="stream-strip-btn">
+                <span>Curriculum</span>
+                <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stream 2: Physics Olympiad -->
+          <div class="stream-strip-row">
+            <div class="stream-strip-visual">
+              <img src="assets/images/sections/p20.jpg" alt="Physics Olympiad experimental inquiry" loading="lazy">
+              <span class="stream-strip-badge">Grades 10–12</span>
+            </div>
+            <div class="stream-strip-main">
+              <h3 class="stream-strip-title">Physics Olympiad</h3>
+              <div class="stream-strip-pipeline">
+                <span class="stream-pipeline-stage">NSEP (Nov)</span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">INPhO (Jan)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">OCSC (Apr)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage font-bold text-brand-gold">IPhO Final</span></span>
+              </div>
+            </div>
+            <div class="stream-strip-side">
+              <span class="stream-strip-target-pill">Target: IPhO Podium</span>
+              <a href="programs.html#intermediate-division" class="stream-strip-btn">
+                <span>Curriculum</span>
+                <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stream 3: Chemistry Olympiad -->
+          <div class="stream-strip-row">
+            <div class="stream-strip-visual">
+              <img src="assets/images/sections/p21.jpg" alt="Chemistry Olympiad reagents and laboratory testing"
+                loading="lazy">
+              <span class="stream-strip-badge">Grades 10–12</span>
+            </div>
+            <div class="stream-strip-main">
+              <h3 class="stream-strip-title">Chemistry Olympiad</h3>
+              <div class="stream-strip-pipeline">
+                <span class="stream-pipeline-stage">NSEC (Nov)</span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">INChO (Jan)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">OCSC (May)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage font-bold text-brand-gold">IChO Final</span></span>
+              </div>
+            </div>
+            <div class="stream-strip-side">
+              <span class="stream-strip-target-pill">Target: IChO Podium</span>
+              <a href="programs.html#senior-division" class="stream-strip-btn">
+                <span>Curriculum</span>
+                <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stream 4: Junior Science Olympiad -->
+          <div class="stream-strip-row">
+            <div class="stream-strip-visual">
+              <img src="assets/images/sections/p22.jpg" alt="Junior science students in foundation inquiry"
+                loading="lazy">
+              <span class="stream-strip-badge">Grades 6–8</span>
+            </div>
+            <div class="stream-strip-main">
+              <h3 class="stream-strip-title">Junior Science Olympiad</h3>
+              <div class="stream-strip-pipeline">
+                <span class="stream-pipeline-stage">NSEJS (Nov)</span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">INJSO (Jan)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage">OCSC (Apr)</span></span>
+                <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><span class="stream-pipeline-arrow">&rarr;</span> <span class="stream-pipeline-stage font-bold text-brand-gold">IJSO Final</span></span>
+              </div>
+            </div>
+            <div class="stream-strip-side">
+              <span class="stream-strip-target-pill">Target: IJSO Podium</span>
+              <a href="programs.html#junior-division" class="stream-strip-btn">
+                <span>Curriculum</span>
+                <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Clean Centered Action -->
+        <div class="text-center mt-12 flex justify-center">
+          <a href="programs.html" class="btn-primary">
+            <span class="whitespace-nowrap">Explore Full Syllabus</span>
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: STUDENT IMMERSION & LIFE AT ACADEMY (Asymmetric Photo Journal Mosaic) -->
+    <section id="student-life" class="py-16 md:py-24 border-b border-slate-200 dark:border-zinc-800">
+      <div class="site-container">
+
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <div class="section-badge mx-auto">Student Life</div>
+          <h2 class="section-title text-slate-900 dark:text-white">Life Inside the Olympiad Cohort</h2>
+          <p class="section-subtitle text-slate-700 dark:text-slate-300">
+            A collaborative community of analytical thinkers pursuing breakthrough proofs.
+          </p>
+        </div>
+
+        <!-- 4-Image Editorial Photo Journal -->
+        <div class="life-mosaic-grid">
+
+          <!-- Featured Big Photo (Left) -->
+          <div class="life-card group">
+            <img src="assets/images/gallery/p23.jpg"
+              alt="Students passionately discussing mathematical solutions around table"
+              class="w-full h-full object-cover min-h-[380px] lg:min-h-[500px] transition-transform duration-500 group-hover:scale-105"
+              loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-2.5 py-0.5 rounded bg-brand-gold text-black font-extrabold text-[10px] uppercase">Daily
+                Peer Colloquium</span>
+              <h3 class="font-heading font-bold text-xl mt-1">Evening Problem Debates</h3>
+              <p class="text-xs text-slate-200 mt-1 max-w-md">Comparing proof methods for computational speed and
+                mathematical elegance.</p>
+            </div>
+          </div>
+
+          <!-- Stacked 3 Photos (Right) -->
+          <div class="life-mosaic-stack">
+
+            <div class="life-card group aspect-[16/8]">
+              <img src="assets/images/gallery/p24.jpg"
+                alt="Student taking detailed analytical notes during Olympiad masterclass"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h4 class="font-heading font-bold text-sm">Advanced Proof Masterclasses</h4>
+                <p class="text-[11px] text-slate-300">Weekend seminars on projective geometry and combinatorics.</p>
+              </div>
+            </div>
+
+            <div class="life-card group aspect-[16/8]">
+              <img src="assets/images/gallery/p25.jpg" alt="Historic academic campus quadrangle building"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h4 class="font-heading font-bold text-sm">STEM Academic Enclave</h4>
+                <p class="text-[11px] text-slate-300">Dedicated campus environment for scholarship and research.</p>
+              </div>
+            </div>
+
+            <div class="life-card group aspect-[16/8]">
+              <img src="assets/images/gallery/p26.jpg" alt="Students celebrating national Olympiad medal ceremony"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4 right-4 text-white">
+                <h4 class="font-heading font-bold text-sm">Medal Convocation Celebrations</h4>
+                <p class="text-[11px] text-slate-300">Recognizing national rank holders with academic honors.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: FREE DIAGNOSTIC & ADMISSIONS CONSULTATION (Split Diagnostic CTA) -->
+    <section id="diagnostic-cta" class="py-16 md:py-24 bg-brand-navy dark:bg-black text-white relative overflow-hidden">
+      <div class="site-container relative z-10">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+          <!-- Left: Diagnostic Assessment Prompt -->
+          <div class="lg:col-span-7 space-y-5">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/20 text-brand-gold border border-brand-gold/30 text-xs font-bold uppercase tracking-wider">
+              Complimentary Aptitude Assessment
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-heading font-extrabold tracking-tight text-white leading-tight">
+              Evaluate Your Child's <span class="text-brand-gold">Olympiad Aptitude</span> in 20 Minutes
+            </h2>
+
+            <p class="text-sm md:text-base text-slate-200 max-w-xl leading-relaxed">
+              Take our 20-minute diagnostic to assess logical reasoning and conceptual readiness for PRMO and NSEJS.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <div class="flex items-center gap-3 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Instant diagnostic report with sub-topic strengths and score analytics</span>
+              </div>
+              <div class="flex items-center gap-3 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>1-on-1 academic counseling with senior Olympiad faculty mentors</span>
+              </div>
+              <div class="flex items-center gap-3 text-xs text-slate-200">
+                <svg class="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Eligibility evaluation for up to 100% Merit Scholarships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Direct Action Diagnostic Booking Container -->
+          <div class="lg:col-span-5">
+            <div class="bg-white/5 backdrop-blur-md border border-white/15 rounded-2xl p-6 sm:p-8 space-y-4 shadow-2xl">
+              <h3 class="font-heading font-bold text-lg text-white">Book Preliminary Screening</h3>
+              <p class="text-xs text-slate-300">Select candidate grade and preferred testing mode.</p>
+
+              <div class="space-y-3">
+                <div>
+                  <label for="studentGrade" class="block text-[11px] font-semibold text-slate-300 mb-1">Student Current
+                    Grade</label>
+                  <select id="studentGrade"
+                    class="w-full px-3 py-2.5 rounded-lg bg-black/40 border border-white/20 text-white text-xs focus:outline-none focus:border-brand-gold">
+                    <option value="6-7">Grade 6 or 7 (Early Foundation)</option>
+                    <option value="8-9">Grade 8 or 9 (PRMO / NSEJS Track)</option>
+                    <option value="10-11">Grade 10 or 11 (INMO / INPhO Track)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="examMode" class="block text-[11px] font-semibold text-slate-300 mb-1">Preferred
+                    Mode</label>
+                  <select id="examMode"
+                    class="w-full px-3 py-2.5 rounded-lg bg-black/40 border border-white/20 text-white text-xs focus:outline-none focus:border-brand-gold">
+                    <option value="online">Online Diagnostic (Anytime 24/7)</option>
+                    <option value="offline">Offline Campus Test Center (Saturdays)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="contact.html"
+                  class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-lg bg-brand-gold hover:bg-brand-gold-bright text-black font-extrabold text-sm transition-all shadow-lg shadow-brand-gold/20">
+                  <span>Start Free Diagnostic Test</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+
+              <p class="text-[10px] text-center text-slate-400">
+                100% Free &bull; No credit card required &bull; 8,200+ students assessed
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SCROLL TO TOP BUTTON
+       ====================================================================== -->
+  <button id="scroll-top" type="button" aria-label="Scroll back to top">
+    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       SHARED FOOTER
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+
+      <!-- Column 1: Brand & Credibility -->
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo-wrap">
+          <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Foundation Crest" class="footer-logo">
+          <div>
+            <span class="footer-title">Olympiad Foundation</span>
+            <p class="text-xs font-semibold uppercase tracking-wider text-brand-gold">Coaching Center</p>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Premier specialized training institution dedicated to cultivating international Olympiad medalists in
+          Mathematics, Physics, Chemistry, and Junior Science.
+        </p>
+        <div class="footer-accreditation">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+          <span>Accredited STEM Excellence Center</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Academic Programs -->
+      <div>
+        <h3 class="footer-col-title">Olympiad Streams</h3>
+        <ul class="footer-links-list">
+          <li><a href="programs.html" class="footer-link">Mathematical Olympiad (PRMO / RMO / INMO)</a></li>
+          <li><a href="programs.html" class="footer-link">Physics Olympiad (NSEP / INPhO)</a></li>
+          <li><a href="programs.html" class="footer-link">Chemistry Olympiad (NSEC / INChO)</a></li>
+          <li><a href="programs.html" class="footer-link">Junior Science Olympiad (NSEJS / IJSO)</a></li>
+          <li><a href="programs.html" class="footer-link">Early Foundation (Grades 6–8)</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Portals & Navigation -->
+      <div>
+        <h3 class="footer-col-title">Quick Portals</h3>
+        <ul class="footer-links-list">
+          <li><a href="index.html" class="footer-link">Home 1 (Foundation)</a></li>
+          <li><a href="home-2.html" class="footer-link">Home 2 (Excellence)</a></li>
+          <li><a href="about.html" class="footer-link">About Academy</a></li>
+          <li><a href="results.html" class="footer-link">Hall of Fame & Results</a></li>
+          <li><a href="dashboard.html" class="footer-link">Student Dashboard</a></li>
+          <li><a href="contact.html" class="footer-link">Admissions & Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Campus & Helpline -->
+      <div>
+        <h3 class="footer-col-title">Academic Campus</h3>
+        <div class="footer-contact-item">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span>Plot 42, Olympiad Academic Enclave, Knowledge Park, STEM City</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>Helpline: +91 98765 43210</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span>admissions@olympiadfoundation.edu</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>
+          &copy; 2026 Olympiad Foundation Coaching Center. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="dashboard.html">Student Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

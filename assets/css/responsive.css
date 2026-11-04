@@ -1,0 +1,676 @@
+/* ==========================================================================
+   OLYMPIAD FOUNDATION COACHING CENTER - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Breakpoint: Desktop Single Line Header (> 1080px) */
+@media (min-width: 1081px) {
+  .mobile-drawer-overlay {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .mobile-drawer {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .header-actions .action-icon-btn,
+  .header-actions .btn-login,
+  .header-actions .btn-header-cta {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex !important;
+  }
+}
+
+/* 2-Column Responsive Footer Grid (strictly scoped for 1032px, 960px, 768px: 768px to 1080px) */
+@media (min-width: 768px) and (max-width: 1080px) {
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 36px 48px !important;
+    padding: 48px 24px 36px !important;
+  }
+
+  .footer-desc {
+    max-width: 440px !important;
+  }
+
+  /* Mentor Cards Precise Text Alignment for 1032px, 960px, 768px */
+  .mentor-card {
+    padding: 18px 14px !important;
+  }
+
+  .mentor-badge {
+    min-height: 28px !important;
+    font-size: 9.5px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .mentor-name {
+    font-size: 1.02rem !important;
+    min-height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1.25 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .mentor-credentials {
+    font-size: 0.72rem !important;
+    min-height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .mentor-bio {
+    font-size: 0.73rem !important;
+    min-height: 72px !important;
+    line-height: 1.45 !important;
+  }
+
+  .mentor-lead {
+    font-size: 0.70rem !important;
+    min-height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 10px !important;
+  }
+
+  /* Weekly Schedule Row Precise Text Alignment for 768px, 960px, 1032px */
+  .schedule-row {
+    grid-template-columns: auto 1fr auto !important;
+    gap: 0.75rem 1.25rem !important;
+    padding: 1.15rem 1.25rem !important;
+  }
+
+  .schedule-day-col {
+    justify-content: flex-start !important;
+    min-width: 130px !important;
+  }
+
+  .schedule-meta-col {
+    justify-content: flex-end !important;
+    min-width: 155px !important;
+  }
+
+  .schedule-info-col {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 0 !important;
+    gap: 0.4rem !important;
+  }
+
+  .schedule-session-title {
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+  }
+
+  .schedule-chips-wrap {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+  }
+
+  .schedule-focus-chip {
+    font-size: 0.68rem !important;
+    padding: 0.18rem 0.5rem !important;
+    white-space: nowrap !important;
+  }
+
+  .schedule-time-badge {
+    font-size: 0.72rem !important;
+    padding: 0.3rem 0.65rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Single Column Footer for Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding: 40px 20px 28px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-desc {
+    max-width: 100% !important;
+  }
+}
+
+/* Breakpoint: Tablets & Large Phones (max-width: 991px) */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .hero-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  .hero-fullscreen {
+    min-height: calc(100dvh - var(--header-height)) !important;
+    height: auto !important;
+    padding: 40px 0 !important;
+  }
+
+  .hero-overlay-section.inner-hero-section {
+    min-height: 500px !important;
+    height: 500px !important;
+  }
+
+  .mentorship-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  .hero2-mosaic {
+    grid-template-columns: 1fr !important;
+    max-width: 580px;
+    margin: 24px auto 0;
+  }
+
+  .mosaic-item-left,
+  .mosaic-item-right {
+    display: none !important;
+  }
+
+  .mosaic-item-center {
+    width: 100% !important;
+  }
+
+  .roadmap-timeline {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .roadmap-timeline::before {
+    display: none !important;
+  }
+
+  .life-mosaic-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-hero-stack {
+    max-width: 420px;
+    margin-top: 24px;
+  }
+
+  .routine-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .delegation-spotlight-deck {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* Breakpoint: Small Tablets and Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  /* Responsive Hero Overlay System */
+  .hero-overlay-section {
+    min-height: 400px !important;
+    padding: 60px 0 !important;
+  }
+
+  .hero-bg-home2 {
+    background-image: 
+      linear-gradient(180deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.82) 65%, rgba(10, 37, 64, 0.65) 100%),
+      url('../images/hero/home2-hero-main.jpg') !important;
+  }
+  html.dark .hero-bg-home2 {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.65) 100%),
+      url('../images/hero/home2-hero-main.jpg') !important;
+  }
+
+  .hero-bg-about {
+    background-image: 
+      linear-gradient(180deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.82) 65%, rgba(10, 37, 64, 0.65) 100%),
+      url('../images/about/about-hero-academic.jpg') !important;
+  }
+  html.dark .hero-bg-about {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.65) 100%),
+      url('../images/about/about-hero-academic.jpg') !important;
+  }
+
+  .hero-bg-programs {
+    background-image: 
+      linear-gradient(180deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.82) 65%, rgba(10, 37, 64, 0.65) 100%),
+      url('../images/services/programs-hero-classroom.jpg') !important;
+  }
+  html.dark .hero-bg-programs {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.65) 100%),
+      url('../images/services/programs-hero-classroom.jpg') !important;
+  }
+
+  .hero-bg-results {
+    background-image: 
+      linear-gradient(180deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.82) 65%, rgba(10, 37, 64, 0.65) 100%),
+      url('../images/products/results-hero-ceremony.jpg') !important;
+  }
+  html.dark .hero-bg-results {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.65) 100%),
+      url('../images/products/results-hero-ceremony.jpg') !important;
+  }
+
+  .hero-bg-contact {
+    background-image: 
+      linear-gradient(180deg, rgba(10, 37, 64, 0.90) 0%, rgba(10, 37, 64, 0.82) 65%, rgba(10, 37, 64, 0.65) 100%),
+      url('../images/about/contact-hero-counseling.jpg') !important;
+  }
+  html.dark .hero-bg-contact {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.65) 100%),
+      url('../images/about/contact-hero-counseling.jpg') !important;
+  }
+
+  .about-hero-stack {
+    max-width: 340px;
+  }
+
+  .about-hero-overlap-card {
+    width: 65% !important;
+    bottom: -15px !important;
+  }
+
+  .routine-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .map-embed-wrapper {
+    height: 340px !important;
+  }
+
+  .contact-cta-card {
+    padding: 36px 24px !important;
+  }
+
+  .case-study-card {
+    margin-bottom: 20px;
+  }
+
+  .login-split-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .login-visual-panel {
+    display: none !important;
+  }
+
+  .dashboard-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10001;
+    width: 290px !important;
+    max-width: 85vw !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+  }
+
+  [dir="rtl"] .dashboard-sidebar {
+    transform: translateX(100%);
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .dashboard-sidebar.mobile-open {
+    transform: translateX(0) !important;
+  }
+
+  .sidebar-backdrop {
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-backdrop.active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .dashboard-main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    padding: 20px 14px !important;
+  }
+
+  .roster-table {
+    min-width: 760px !important;
+  }
+
+  .roster-table th,
+  .roster-table td {
+    white-space: nowrap !important;
+  }
+}
+
+/* Breakpoint: Extra Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-overlay-section {
+    min-height: 360px !important;
+    padding: 44px 0 !important;
+  }
+
+  .roster-table {
+    min-width: 760px !important;
+  }
+
+  .roster-table th,
+  .roster-table td {
+    padding: 10px 12px !important;
+    font-size: 0.78rem !important;
+    white-space: nowrap !important;
+  }
+
+  .auth-card {
+    padding: 24px 18px !important;
+  }
+}
+
+/* Tablet Alignment for Stream Strip Rows (768px, 960px, 1032px) */
+@media (min-width: 641px) and (max-width: 1080px) {
+  .stream-strip-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+    padding: 14px 18px 14px 14px !important;
+  }
+
+  .stream-strip-visual {
+    width: 135px !important;
+    height: 88px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .stream-strip-main {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .stream-strip-title {
+    font-size: 1.05rem !important;
+    white-space: nowrap !important;
+    margin-bottom: 4px !important;
+  }
+
+  .stream-strip-pipeline {
+    font-size: 0.78rem !important;
+    gap: 6px !important;
+  }
+
+  .stream-strip-side {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .stream-strip-target-pill {
+    padding: 4px 10px !important;
+    font-size: 0.72rem !important;
+    white-space: nowrap !important;
+  }
+
+  .stream-strip-btn {
+    padding: 6px 12px !important;
+    font-size: 0.75rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Breakpoint: Mobile Devices (max-width: 640px) */
+@media (max-width: 640px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .roadmap-timeline {
+    grid-template-columns: 1fr !important;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-outline-light {
+    padding: 11px 20px !important;
+    font-size: 0.88rem !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-fullscreen {
+    min-height: calc(100dvh - var(--header-height)) !important;
+    height: auto !important;
+    padding: 32px 0 !important;
+  }
+
+  .hero-overlay-section.inner-hero-section {
+    min-height: 480px !important;
+    height: auto !important;
+    padding: 40px 0 !important;
+  }
+
+  .stream-strip-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 14px !important;
+    gap: 14px !important;
+  }
+
+  .stream-strip-visual {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .stream-strip-side {
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding-top: 10px !important;
+    border-top: 1px solid var(--border-color);
+  }
+
+  html.dark .stream-strip-side {
+    border-top-color: #27272a;
+  }
+
+  .section-padding {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+
+  .tenet-row-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tenet-row-visual {
+    min-height: 180px !important;
+    height: 180px !important;
+  }
+
+  .tenet-row-body {
+    padding: 1.25rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .program-tab-nav {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem !important;
+  }
+
+  .program-panel-content {
+    padding: 1.5rem !important;
+  }
+
+  .program-panel-visual {
+    min-height: 220px !important;
+    order: -1 !important;
+  }
+
+  .program-panel-title {
+    font-size: 1.35rem !important;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    padding: 1.25rem !important;
+  }
+
+  .schedule-day-col {
+    justify-content: center !important;
+  }
+
+  .schedule-meta-col {
+    justify-content: center !important;
+    padding-top: 0.25rem !important;
+  }
+
+  .contact-form-card,
+  .advisor-spotlight-card {
+    padding: 24px 18px !important;
+  }
+
+  .map-embed-wrapper {
+    height: 280px !important;
+  }
+
+  .header-container {
+    padding: 0 14px;
+  }
+
+  .header-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-brand-title {
+    font-size: 0.95rem;
+  }
+
+  .header-brand-sub {
+    font-size: 0.65rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 36px 16px 28px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-desc {
+    max-width: 100% !important;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #scroll-top {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  [dir="rtl"] #scroll-top {
+    right: auto;
+    left: 16px;
+  }
+
+  .delegation-companion-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    padding: 16px !important;
+  }
+
+  .delegation-companion-thumb {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .delegation-flagship-body {
+    padding: 20px 16px !important;
+  }
+}
+
+/* Ultra Small Screens (max-width: 360px) */
+@media (max-width: 360px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-outline-light {
+    padding: 9px 14px !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
+  }
+
+  .header-brand-title {
+    font-size: 0.88rem;
+  }
+
+  .header-brand-sub {
+    display: none;
+  }
+}
+
+/* Large Screens & Ultrawide Alignment */
+@media (min-width: 1536px) {
+  .header-container,
+  .site-container,
+  .footer-top,
+  .footer-bottom-inner {
+    max-width: var(--container-max-width);
+  }
+}
+
+/* High Contrast & Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

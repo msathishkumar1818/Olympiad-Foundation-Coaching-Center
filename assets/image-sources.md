@@ -1,0 +1,53 @@
+# Image Source Log
+
+| Filename | Page | Section | Source Website | Original Source Page | License | Attribution | Commercial Use | Download Date |
+|----------|------|---------|----------------|----------------------|---------|-------------|-----------------|---------------|
+| brand-logo.jpg | Global | Header, Footer, Loader, Favicon | Client Upload | User Provided Official Brand Identity | Custom Brand Asset | Olympiad Foundation Coaching Center | Yes | 2026-11-04 |
+| olympiad-hero-students.jpg | Home 1 (`index.html`) | Section 1: Hero Editorial | Unsplash | https://unsplash.com/photos/523240795612-9a054b0db644 | Unsplash License | Priscilla Du Preez | Yes | 2026-11-04 |
+| math-olympiad.jpg | Home 1 (`index.html`) | Section 2: Tracks (Math) | Unsplash | https://unsplash.com/photos/509228468518-180dd4864904 | Unsplash License | Roman Mager | Yes | 2026-11-04 |
+| physics-olympiad.jpg | Home 1 (`index.html`) | Section 2: Tracks (Physics) | Unsplash | https://unsplash.com/photos/507668077129-56e32842fceb | Unsplash License | Jesse Orrico | Yes | 2026-11-04 |
+| chemistry-olympiad.jpg | Home 1 (`index.html`) | Section 2: Tracks (Chemistry) | Unsplash | https://unsplash.com/photos/532187863486-abf9dbad1b69 | Unsplash License | Hans Reniers | Yes | 2026-11-04 |
+| junior-science-olympiad.jpg | Home 1 (`index.html`) | Section 2: Tracks (Junior Science) | Unsplash | https://unsplash.com/photos/577896851231-70ef18881754 | Unsplash License | CDC | Yes | 2026-11-04 |
+| olympiad-master-faculty.jpg | Home 1 (`index.html`) | Section 3: Faculty Architecture | Unsplash | https://unsplash.com/photos/524178232363-1fb2b075b655 | Unsplash License | Dom Fou | Yes | 2026-11-04 |
+| achiever-aarav-sharma.jpg | Home 1 (`index.html`) | Section 4: Achievers (Aarav Sharma) | Unsplash | https://unsplash.com/photos/539571696357-5a69c17a67c6 | Unsplash License | Christopher Campbell | Yes | 2026-11-04 |
+| achiever-priya-patel.jpg | Home 1 (`index.html`) | Section 4: Achievers (Priya Patel) | Unsplash | https://unsplash.com/photos/534528741775-53994a69daeb | Unsplash License | Michael Dam | Yes | 2026-11-04 |
+| achiever-rohan-verma.jpg | Home 1 (`index.html`) | Section 4: Achievers (Rohan Verma) | Unsplash | https://unsplash.com/photos/507003211169-0a1dd7228f2d | Unsplash License | Joseph Gonzalez | Yes | 2026-11-04 |
+| achiever-ananya-iyer.jpg | Home 1 (`index.html`) | Section 4: Achievers (Ananya Iyer) | Unsplash | https://unsplash.com/photos/517841905240-472988babdf9 | Unsplash License | Dan Farrel | Yes | 2026-11-04 |
+| campus-scientific-lab.jpg | Home 1 (`index.html`) | Section 5: Campus Infrastructure (Lab) | Unsplash | https://unsplash.com/photos/582719478250-c89cae4dc85b | Unsplash License | Lucas Vasques | Yes | 2026-11-04 |
+| campus-math-library.jpg | Home 1 (`index.html`) | Section 5: Campus Infrastructure (Library) | Unsplash | https://unsplash.com/photos/521587760476-6c12a4b040da | Unsplash License | Giammarco Boscaro | Yes | 2026-11-04 |
+| campus-cbt-arena.jpg | Home 1 (`index.html`) | Section 5: Campus Infrastructure (CBT Arena) | Unsplash | https://unsplash.com/photos/516321318423-f06f85e504b3 | Unsplash License | Alex Kotliarskyi | Yes | 2026-11-04 |
+| home2-hero-main.jpg | Home 2 (`home-2.html`) | Section 1: Panoramic Hero (Main) | Unsplash | https://unsplash.com/photos/513258496099-48168024aec0 | Unsplash License | Element5 Digital | Yes | 2026-11-04 |
+| home2-hero-lab.jpg | Home 2 (`home-2.html`) | Section 1: Panoramic Hero (Optics Lab) | Unsplash | https://unsplash.com/photos/518152006812-edab29b069ac | Unsplash License | Umberto | Yes | 2026-11-04 |
+| home2-hero-ceremony.jpg | Home 2 (`home-2.html`) | Section 1: Panoramic Hero (Medal Ribbon) | Unsplash | https://unsplash.com/photos/567427017947-545c5f8d16ad | Unsplash License | Giorgio Trovato | Yes | 2026-11-04 |
+| home2-problem-clinic.jpg | Home 2 (`home-2.html`) | Section 3: Problem Clinic Board | Unsplash | https://unsplash.com/photos/509062522246-3755977927d7 | Unsplash License | Roman Mager | Yes | 2026-11-04 |
+| home2-life-seminar.jpg | Home 2 (`home-2.html`) | Section 5: Student Life (Seminar) | Unsplash | https://unsplash.com/photos/434030216411-0b793f4b4173 | Unsplash License | Nick Morrison | Yes | 2026-11-04 |
+| home2-life-debate.jpg | Home 2 (`home-2.html`) | Section 5: Student Life (Debate) | Unsplash | https://unsplash.com/photos/522202176988-66273c2fd55f | Unsplash License | Priscilla Du Preez | Yes | 2026-11-04 |
+| home2-life-experiment.jpg | Home 2 (`home-2.html`) | Section 5: Student Life (Campus Quad) | Unsplash | https://unsplash.com/photos/562774053-701939374585 | Unsplash License | Vasily Kolotilov | Yes | 2026-11-04 |
+| home2-life-celebration.jpg | Home 2 (`home-2.html`) | Section 5: Student Life (Celebration) | Unsplash | https://unsplash.com/photos/576267423445-b2e0074d68a4 | Unsplash License | Jason Goodman | Yes | 2026-11-04 |
+| about-hero-academic.jpg | About (`about.html`) | Section 1: Editorial Hero Stack | Unsplash | https://unsplash.com/photos/541339907198-e08756dedf3f | Unsplash License | Pang Yuhao | Yes | 2026-11-04 |
+| about-hero-proof.jpg | About (`about.html`) | Section 1: Hero Overlapping Proof | Unsplash | https://unsplash.com/photos/596495578065-6e0763fa1178 | Unsplash License | Roman Mager | Yes | 2026-11-04 |
+| faculty-dr-arvind.jpg | About (`about.html`) | Section 3: Faculty Council (Math) | Unsplash | https://unsplash.com/photos/500648767791-00dcc994a43e | Unsplash License | Jurica Koletic | Yes | 2026-11-04 |
+| faculty-dr-meera.jpg | About (`about.html`) | Section 3: Faculty Council (Physics) | Unsplash | https://unsplash.com/photos/573496359142-b8d87734a5a2 | Unsplash License | Christina @ wocintechchat | Yes | 2026-11-04 |
+| faculty-dr-rajesh.jpg | About (`about.html`) | Section 3: Faculty Council (Chemistry) | Unsplash | https://unsplash.com/photos/472099645785-5658abf4ff4e | Unsplash License | Craig McKay | Yes | 2026-11-04 |
+| about-milestone-2012.jpg | About (`about.html`) | Section 4: Milestone 2012 (Founding) | Unsplash | https://unsplash.com/photos/517486808906-6ca8b3f04846 | Unsplash License | Alexis Brown | Yes | 2026-11-04 |
+| about-milestone-2018.jpg | About (`about.html`) | Section 4: Milestone 2018 (Labs) | Unsplash | https://unsplash.com/photos/581093588401-fbb62a02f120 | Unsplash License | Science in HD | Yes | 2026-11-04 |
+| about-milestone-2025.jpg | About (`about.html`) | Section 4: Milestone 2025 (Medals) | Unsplash | https://unsplash.com/photos/551818255-e6e10975bc17 | Unsplash License | MD Duran | Yes | 2026-11-04 |
+| programs-hero-classroom.jpg | Programs (`programs.html`) | Section 1: Curriculum Hero | Unsplash | https://unsplash.com/photos/577495508048-b635879837f1 | Unsplash License | Dom Fou | Yes | 2026-11-04 |
+| track-junior-grade6-8.jpg | Programs (`programs.html`) | Section 2: Junior Division (Grades 6–8) | Unsplash | https://unsplash.com/photos/503676260728-1c00da094a0b | Unsplash License | Kimberly Farmer | Yes | 2026-11-04 |
+| track-intermediate-grade8-10.jpg | Programs (`programs.html`) | Section 2: Intermediate Division (Grades 8–10) | Unsplash | https://unsplash.com/photos/522071820081-009f0129c71c | Unsplash License | Annie Spratt | Yes | 2026-11-04 |
+| track-senior-grade11-12.jpg | Programs (`programs.html`) | Section 2: Senior Division (Grades 11–12) | Unsplash | https://unsplash.com/photos/532094349884-543bc11b234d | Unsplash License | ThisisEngineering | Yes | 2026-11-04 |
+| modality-classroom.jpg | Programs (`programs.html`) | Section 3: Classroom Modality | Unsplash | https://unsplash.com/photos/497633762265-9d179a990aa6 | Unsplash License | Kimberly Farmer | Yes | 2026-11-04 |
+| modality-hybrid.jpg | Programs (`programs.html`) | Section 3: Hybrid Modality | Unsplash | https://unsplash.com/photos/531482615713-2afd69097998 | Unsplash License | Windows | Yes | 2026-11-04 |
+| modality-bootcamp.jpg | Programs (`programs.html`) | Section 3: Bootcamp Modality | Unsplash | https://unsplash.com/photos/529156069898-49953e39b3ac | Unsplash License | Alexis Brown | Yes | 2026-11-04 |
+| modality-clinic.jpg | Programs (`programs.html`) | Section 3: Mentorship Clinic Modality | Unsplash | https://unsplash.com/photos/516534775068-ba3e7458af70 | Unsplash License | Priscilla Du Preez | Yes | 2026-11-04 |
+| results-hero-ceremony.jpg | Results (`results.html`) | Section 1: Honors Hero Ceremony | Unsplash | https://unsplash.com/photos/546519638-68e109498ffc | Unsplash License | Jonathan Chng | Yes | 2026-11-04 |
+| podium-imo-math.jpg | Results (`results.html`) | Section 2: IMO Delegation Podium | Unsplash | https://unsplash.com/photos/523580494863-6f3031224c94 | Unsplash License | MD Duran | Yes | 2026-11-04 |
+| podium-ipho-physics.jpg | Results (`results.html`) | Section 2: IPhO Delegation Podium | Unsplash | https://unsplash.com/photos/526976668912-1a811878dd37 | Unsplash License | Chang Duong | Yes | 2026-11-04 |
+| podium-ijso-science.jpg | Results (`results.html`) | Section 2: IJSO Delegation Podium | Unsplash | https://unsplash.com/photos/571260899304-425eee4c7efc | Unsplash License | Dom Fou | Yes | 2026-11-04 |
+| case-study-math-growth.jpg | Results (`results.html`) | Section 4: Case Study (PRMO Growth) | Unsplash | https://unsplash.com/photos/456513080510-7bf3a84b82f8 | Unsplash License | Aaron Burden | Yes | 2026-11-04 |
+| case-study-physics-lab.jpg | Results (`results.html`) | Section 4: Case Study (Physics Lab) | Unsplash | https://unsplash.com/photos/518770660439-4636190af475 | Unsplash License | Alexandre Debiève | Yes | 2026-11-04 |
+| login-student-portal.jpg | Login (`login.html`) | Section 1: Split Screen Ambient Visual | Unsplash | https://unsplash.com/photos/1498243691581-b145c3f54a5a | Unsplash License | Scott Webb | Yes | 2026-11-04 |
+| contact-hero-counseling.jpg | Contact (`contact.html`) | Section 1: Hero Admissions Desk | Unsplash | https://unsplash.com/photos/1573497019940-1c28c88b4f3e | Unsplash License | Christina @ wocintechchat | Yes | 2026-11-04 |
+| contact-admissions-advisor.jpg | Contact (`contact.html`) | Section 3: Admissions & Screening Booking Form | Unsplash | https://unsplash.com/photos/1580489944761-15a19d654956 | Unsplash License | Ayo Ogunseinde | Yes | 2026-11-04 |
+| contact-campus-exterior.jpg | Contact (`contact.html`) | Section 4: Live Google Map & Campus Address | Unsplash | https://unsplash.com/photos/1541829070764-84a7d30dd3f3 | Unsplash License | Mikael Kristenson | Yes | 2026-11-04 |
+| contact-cta-admissions.jpg | Contact (`contact.html`) | Section 5: Admissions Helpline CTA Banner | Unsplash | https://unsplash.com/photos/1492538368677-f6e0afe31dcc | Unsplash License | Vasily Kolotilov | Yes | 2026-11-04 |
