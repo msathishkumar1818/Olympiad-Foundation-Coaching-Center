@@ -32,21 +32,21 @@
   }
 }
 
-/* 2-Column Responsive Footer Grid (strictly scoped for 1032px, 960px, 768px: 768px to 1080px) */
+/* Single Column Stacked Footer Grid (strictly scoped for 1032px, 960px, 768px: 768px to 1080px) */
 @media (min-width: 768px) and (max-width: 1080px) {
   .footer-top {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 36px 48px !important;
-    padding: 48px 24px 36px !important;
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding: 44px 24px 32px !important;
   }
 
   .footer-desc {
-    max-width: 440px !important;
+    max-width: 600px !important;
   }
 
   /* Mentor Cards Precise Text Alignment for 1032px, 960px, 768px */
   .mentor-card {
-    padding: 18px 14px !important;
+    padding: 20px 16px !important;
   }
 
   .mentor-badge {
@@ -57,20 +57,18 @@
   }
 
   .mentor-name {
-    font-size: 1.02rem !important;
-    min-height: 50px !important;
-    display: flex !important;
-    align-items: center !important;
-    line-height: 1.25 !important;
+    font-size: 1.05rem !important;
+    min-height: 52px !important;
+    display: block !important;
+    line-height: 1.3 !important;
     margin-bottom: 4px !important;
   }
 
   .mentor-credentials {
     font-size: 0.72rem !important;
-    min-height: 34px !important;
-    display: flex !important;
-    align-items: center !important;
-    line-height: 1.3 !important;
+    min-height: 36px !important;
+    display: block !important;
+    line-height: 1.35 !important;
     margin-bottom: 8px !important;
   }
 
@@ -78,51 +76,56 @@
     font-size: 0.73rem !important;
     min-height: 72px !important;
     line-height: 1.45 !important;
+    display: block !important;
   }
 
   .mentor-lead {
     font-size: 0.70rem !important;
-    min-height: 36px !important;
+    min-height: 38px !important;
     display: flex !important;
     align-items: center !important;
     padding-top: 10px !important;
+    margin-top: auto !important;
   }
 
   /* Weekly Schedule Row Precise Text Alignment for 768px, 960px, 1032px */
   .schedule-row {
-    grid-template-columns: auto 1fr auto !important;
-    gap: 0.75rem 1.25rem !important;
-    padding: 1.15rem 1.25rem !important;
+    grid-template-columns: 140px 1fr auto !important;
+    gap: 0.75rem 1.5rem !important;
+    padding: 1.25rem 1.5rem !important;
+    align-items: center !important;
   }
 
   .schedule-day-col {
     justify-content: flex-start !important;
-    min-width: 130px !important;
+    min-width: 140px !important;
   }
 
   .schedule-meta-col {
     justify-content: flex-end !important;
     min-width: 155px !important;
+    flex-shrink: 0 !important;
   }
 
   .schedule-info-col {
-    text-align: center !important;
-    align-items: center !important;
+    text-align: left !important;
+    align-items: flex-start !important;
     justify-content: center !important;
     min-width: 0 !important;
-    gap: 0.4rem !important;
+    gap: 0.35rem !important;
   }
 
   .schedule-session-title {
-    font-size: 0.95rem !important;
-    white-space: nowrap !important;
-    text-align: center !important;
+    font-size: 1rem !important;
+    white-space: normal !important;
+    text-align: left !important;
+    line-height: 1.35 !important;
   }
 
   .schedule-chips-wrap {
     display: flex !important;
     flex-wrap: wrap !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     align-items: center !important;
     gap: 0.35rem !important;
   }
@@ -359,12 +362,15 @@
     padding: 20px 14px !important;
   }
 
-  .roster-table {
-    min-width: 760px !important;
+  .roster-table,
+  .dashboard-table {
+    min-width: 660px !important;
   }
 
   .roster-table th,
-  .roster-table td {
+  .roster-table td,
+  .dashboard-table th,
+  .dashboard-table td {
     white-space: nowrap !important;
   }
 }
@@ -376,12 +382,15 @@
     padding: 44px 0 !important;
   }
 
-  .roster-table {
-    min-width: 760px !important;
+  .roster-table,
+  .dashboard-table {
+    min-width: 660px !important;
   }
 
   .roster-table th,
-  .roster-table td {
+  .roster-table td,
+  .dashboard-table th,
+  .dashboard-table td {
     padding: 10px 12px !important;
     font-size: 0.78rem !important;
     white-space: nowrap !important;
@@ -454,6 +463,8 @@
 
   .roadmap-timeline {
     grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    width: 100% !important;
   }
 
   .btn-primary,
@@ -540,16 +551,29 @@
   .schedule-row {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
-    padding: 1.25rem !important;
+    padding: 1.25rem 1rem !important;
+    align-items: flex-start !important;
   }
 
   .schedule-day-col {
-    justify-content: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+  }
+
+  .schedule-info-col {
+    text-align: left !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  .schedule-chips-wrap {
+    justify-content: flex-start !important;
   }
 
   .schedule-meta-col {
-    justify-content: center !important;
+    justify-content: flex-start !important;
     padding-top: 0.25rem !important;
+    width: 100% !important;
   }
 
   .contact-form-card,

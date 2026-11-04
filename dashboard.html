@@ -252,14 +252,14 @@
             </p>
           </div>
 
-          <div class="flex flex-wrap items-center gap-3">
-            <button type="button" class="sidebar-btn-trigger inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-navy dark:bg-brand-gold text-white dark:text-black font-bold text-xs transition-transform hover:-translate-y-0.5" onclick="document.querySelector('.sidebar-btn[data-tab=\'practice-tests\']').click();">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+            <button type="button" class="sidebar-btn-trigger inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-brand-navy dark:bg-brand-gold text-white dark:text-black font-bold text-xs whitespace-nowrap transition-transform hover:-translate-y-0.5 shadow-sm" onclick="document.querySelector('.sidebar-btn[data-tab=\'practice-tests\']').click();">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               <span>Take a Mock Test</span>
             </button>
-            <button type="button" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-black text-slate-800 dark:text-slate-200 font-bold text-xs hover:border-brand-gold transition-colors" onclick="document.querySelector('.sidebar-btn[data-tab=\'scores\']').click();">
+            <button type="button" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-black text-slate-800 dark:text-slate-200 font-bold text-xs whitespace-nowrap hover:border-brand-gold transition-colors" onclick="document.querySelector('.sidebar-btn[data-tab=\'scores\']').click();">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
@@ -269,7 +269,7 @@
         </div>
 
         <!-- 4 Metric Highlight Cards (Even Heights & Alignment - Matches Screenshot) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
           
           <!-- Card 1: Next Appointment / Test -->
           <div class="dash-card">
@@ -374,52 +374,52 @@
             </button>
           </div>
 
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs border-collapse">
+          <div class="dashboard-table-container overflow-x-auto -mx-1 sm:mx-0">
+            <table class="dashboard-table w-full text-left text-xs border-collapse min-w-[660px]">
               <thead>
                 <tr class="border-b border-slate-100 dark:border-zinc-800 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-                  <th class="py-3 px-3">Session / Mock Test</th>
-                  <th class="py-3 px-3">Date & Time</th>
-                  <th class="py-3 px-3">Mentor / Proctor</th>
-                  <th class="py-3 px-3">Status</th>
-                  <th class="py-3 px-3 text-right">Action</th>
+                  <th scope="col" class="py-3 px-3.5 whitespace-nowrap">Session / Mock Test</th>
+                  <th scope="col" class="py-3 px-3.5 whitespace-nowrap">Date & Time</th>
+                  <th scope="col" class="py-3 px-3.5 whitespace-nowrap">Mentor / Proctor</th>
+                  <th scope="col" class="py-3 px-3.5 whitespace-nowrap">Status</th>
+                  <th scope="col" class="py-3 px-3.5 whitespace-nowrap text-right">Action</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100 dark:divide-zinc-800">
                 <tr>
-                  <td class="py-3.5 px-3 font-bold text-slate-900 dark:text-white">
+                  <td class="py-3.5 px-3.5 font-bold text-slate-900 dark:text-white whitespace-nowrap">
                     PRMO Full-Length Mock 06
-                    <span class="block text-[10px] text-slate-500 font-normal">CBT Terminal 12 &bull; 30 Objective Problems</span>
+                    <span class="block text-[10px] text-slate-500 font-normal mt-0.5">CBT Terminal 12 &bull; 30 Objective Problems</span>
                   </td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Tomorrow &bull; 10:00 AM</td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Dr. Arvind Swaminathan</td>
-                  <td class="py-3.5 px-3"><span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-[10px]">Confirmed</span></td>
-                  <td class="py-3.5 px-3 text-right">
-                    <button type="button" class="px-3 py-1 rounded bg-brand-gold text-black font-bold text-xs hover:bg-brand-gold-bright transition-colors">Launch Test</button>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Tomorrow &bull; 10:00 AM</td>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Dr. Arvind Swaminathan</td>
+                  <td class="py-3.5 px-3.5 whitespace-nowrap"><span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-[10px] whitespace-nowrap">Confirmed</span></td>
+                  <td class="py-3.5 px-3.5 text-right whitespace-nowrap">
+                    <button type="button" class="px-3 py-1 rounded bg-brand-gold text-black font-bold text-xs hover:bg-brand-gold-bright transition-colors whitespace-nowrap">Launch Test</button>
                   </td>
                 </tr>
                 <tr>
-                  <td class="py-3.5 px-3 font-bold text-slate-900 dark:text-white">
+                  <td class="py-3.5 px-3.5 font-bold text-slate-900 dark:text-white whitespace-nowrap">
                     Euclidean Geometry Proof Defense
-                    <span class="block text-[10px] text-slate-500 font-normal">Radical Axis & Cyclic Quadrilateral Colloquium</span>
+                    <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Radical Axis & Cyclic Quadrilateral Colloquium</span>
                   </td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Friday &bull; 04:30 PM</td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Faculty Board</td>
-                  <td class="py-3.5 px-3"><span class="px-2 py-0.5 rounded bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold text-[10px]">Confirmed</span></td>
-                  <td class="py-3.5 px-3 text-right">
-                    <button type="button" class="px-3 py-1 rounded border border-slate-300 dark:border-zinc-700 text-xs font-semibold hover:border-brand-gold transition-colors">Prep Notes</button>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Friday &bull; 04:30 PM</td>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Faculty Board</td>
+                  <td class="py-3.5 px-3.5 whitespace-nowrap"><span class="px-2 py-0.5 rounded bg-blue-500/15 text-blue-600 dark:text-blue-400 font-bold text-[10px] whitespace-nowrap">Confirmed</span></td>
+                  <td class="py-3.5 px-3.5 text-right whitespace-nowrap">
+                    <button type="button" class="px-3 py-1 rounded border border-slate-300 dark:border-zinc-700 text-xs font-semibold hover:border-brand-gold transition-colors whitespace-nowrap">Prep Notes</button>
                   </td>
                 </tr>
                 <tr>
-                  <td class="py-3.5 px-3 font-bold text-slate-900 dark:text-white">
+                  <td class="py-3.5 px-3.5 font-bold text-slate-900 dark:text-white whitespace-nowrap">
                     Classical Mechanics Laboratory Error Clinic
-                    <span class="block text-[10px] text-slate-500 font-normal">Experimental Apparatus Practical Data Synthesis</span>
+                    <span class="block text-[10px] text-slate-500 font-normal mt-0.5">Experimental Apparatus Practical Data Synthesis</span>
                   </td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Saturday &bull; 11:00 AM</td>
-                  <td class="py-3.5 px-3 text-slate-600 dark:text-slate-300">Dr. Meera Krishnan</td>
-                  <td class="py-3.5 px-3"><span class="px-2 py-0.5 rounded bg-purple-500/15 text-purple-600 dark:text-purple-400 font-bold text-[10px]">Scheduled</span></td>
-                  <td class="py-3.5 px-3 text-right">
-                    <button type="button" class="px-3 py-1 rounded border border-slate-300 dark:border-zinc-700 text-xs font-semibold hover:border-brand-gold transition-colors">Lab Manual</button>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Saturday &bull; 11:00 AM</td>
+                  <td class="py-3.5 px-3.5 text-slate-600 dark:text-slate-300 whitespace-nowrap">Dr. Meera Krishnan</td>
+                  <td class="py-3.5 px-3.5 whitespace-nowrap"><span class="px-2 py-0.5 rounded bg-purple-500/15 text-purple-600 dark:text-purple-400 font-bold text-[10px] whitespace-nowrap">Scheduled</span></td>
+                  <td class="py-3.5 px-3.5 text-right whitespace-nowrap">
+                    <button type="button" class="px-3 py-1 rounded border border-slate-300 dark:border-zinc-700 text-xs font-semibold hover:border-brand-gold transition-colors whitespace-nowrap">Lab Manual</button>
                   </td>
                 </tr>
               </tbody>
@@ -434,12 +434,15 @@
            ================================================================== -->
       <div id="tab-practice-tests" class="tab-content space-y-6">
         <div class="p-6 rounded-2xl bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800 shadow-sm space-y-4">
-          <div class="flex items-center justify-between">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div>
-              <h2 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Available CBT Olympiad Practice Tests</h2>
-              <p class="text-xs text-slate-500">Timed computer-based simulations mimicking national and international test environments.</p>
+              <h2 class="font-heading font-bold text-lg sm:text-xl text-slate-900 dark:text-white">Available CBT Olympiad Practice Tests</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Timed computer-based simulations mimicking national and international test environments.</p>
             </div>
-            <span class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-xs">Terminal Status: Ready</span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold text-xs whitespace-nowrap self-start sm:self-auto flex-shrink-0">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Terminal Status: Ready
+            </span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -482,7 +485,7 @@
           <h2 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Sub-Topic Performance & Percentile Diagnostics</h2>
           <p class="text-xs text-slate-500">Algorithmic analysis of your strengths, time allocation leaks, and error patterns.</p>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 pt-2">
             <div class="p-4 rounded-xl border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-black">
               <span class="text-[10px] font-bold text-slate-500 uppercase">Number Theory</span>
               <p class="font-heading font-extrabold text-2xl text-emerald-500 mt-1">98%</p>
@@ -516,22 +519,22 @@
           <p class="text-xs text-slate-500">Physical classroom and live hybrid interactive lecture room assignments.</p>
 
           <div class="space-y-3 pt-2">
-            <div class="p-4 rounded-xl border border-slate-200 dark:border-zinc-800 flex items-center justify-between">
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
                 <span class="text-[10px] font-bold text-brand-gold uppercase">Wednesday &bull; 05:30 PM</span>
                 <h4 class="font-heading font-bold text-sm text-slate-900 dark:text-white">Advanced Polynomial Roots & Vieta's Theorem</h4>
                 <p class="text-xs text-slate-500">Main Campus Seminar Hall 1 &bull; Dr. Swaminathan</p>
               </div>
-              <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-zinc-800 text-xs font-bold">Room 102</span>
+              <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-zinc-800 text-xs font-bold self-start sm:self-auto whitespace-nowrap">Room 102</span>
             </div>
 
-            <div class="p-4 rounded-xl border border-slate-200 dark:border-zinc-800 flex items-center justify-between">
+            <div class="p-4 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <div>
                 <span class="text-[10px] font-bold text-blue-500 uppercase">Saturday &bull; 10:00 AM</span>
                 <h4 class="font-heading font-bold text-sm text-slate-900 dark:text-white">Standard 4.5-Hour Olympiad Simulation Mock</h4>
                 <p class="text-xs text-slate-500">CBT Simulation Center Terminal 12</p>
               </div>
-              <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-zinc-800 text-xs font-bold">Terminal 12</span>
+              <span class="px-2.5 py-1 rounded bg-slate-100 dark:bg-zinc-800 text-xs font-bold self-start sm:self-auto whitespace-nowrap">Terminal 12</span>
             </div>
           </div>
         </div>

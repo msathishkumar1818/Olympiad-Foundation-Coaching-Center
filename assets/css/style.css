@@ -1282,6 +1282,7 @@ html.dark .mosaic-item-center {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   position: relative;
+  width: 100%;
 }
 
 .roadmap-timeline::before {
@@ -1305,6 +1306,8 @@ html.dark .roadmap-timeline::before {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 16px;
@@ -1704,9 +1707,8 @@ html.dark .mentor-photo-wrap {
   color: #0f172a;
   line-height: 1.3;
   margin-bottom: 4px;
-  min-height: 48px;
-  display: flex;
-  align-items: center;
+  min-height: 52px;
+  display: block;
 }
 
 html.dark .mentor-name {
@@ -1719,9 +1721,8 @@ html.dark .mentor-name {
   color: #64748b;
   line-height: 1.35;
   margin-bottom: 8px;
-  min-height: 34px;
-  display: flex;
-  align-items: center;
+  min-height: 36px;
+  display: block;
 }
 
 html.dark .mentor-credentials {
@@ -1732,7 +1733,8 @@ html.dark .mentor-credentials {
   font-size: 0.75rem;
   color: #475569;
   line-height: 1.5;
-  min-height: 66px;
+  min-height: 70px;
+  display: block;
 }
 
 html.dark .mentor-bio {
@@ -1746,7 +1748,7 @@ html.dark .mentor-bio {
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--brand-navy);
-  min-height: 38px;
+  min-height: 40px;
   display: flex;
   align-items: center;
 }
@@ -2122,8 +2124,8 @@ html.dark .weekly-schedule-board {
 
 @media (min-width: 768px) {
   .schedule-row {
-    grid-template-columns: auto 1fr auto;
-    gap: 1.25rem;
+    grid-template-columns: 140px 1fr auto;
+    gap: 1.5rem;
   }
 }
 
@@ -2190,10 +2192,10 @@ html.dark .schedule-row:hover {
 .schedule-info-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
-  gap: 0.5rem;
+  text-align: left;
+  gap: 0.35rem;
 }
 
 .schedule-session-title {
@@ -2202,8 +2204,9 @@ html.dark .schedule-row:hover {
   font-weight: 700;
   color: #0f172a;
   margin: 0;
-  text-align: center;
-  white-space: nowrap;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.35;
 }
 
 html.dark .schedule-session-title {
@@ -2213,7 +2216,7 @@ html.dark .schedule-session-title {
 .schedule-chips-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.375rem;
 }
@@ -2849,7 +2852,6 @@ html.dark .portal-header {
 .dashboard-layout {
   display: flex;
   min-height: calc(100vh - var(--header-height));
-  margin-top: var(--header-height);
 }
 
 .dashboard-sidebar {
@@ -2957,7 +2959,7 @@ html.dark .sidebar-btn.active {
 .dashboard-main {
   margin-left: 260px;
   width: calc(100% - 260px);
-  padding: 32px;
+  padding: 24px;
   background-color: var(--bg-surface);
   min-height: calc(100vh - var(--header-height));
 }
@@ -3001,6 +3003,25 @@ html.dark .dash-card {
 
 .tab-content.active {
   display: block;
+}
+
+/* Dashboard Table System */
+.dashboard-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.dashboard-table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 /* Split Login Page Styles */

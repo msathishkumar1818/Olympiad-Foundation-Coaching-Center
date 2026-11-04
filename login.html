@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Portal Login | Olympiad Foundation Coaching Center</title>
-  <meta name="description" content="Secure student portal login for accessing practice tests, tracking mock scores, and viewing batch schedules at Olympiad Foundation.">
+  <meta name="description"
+    content="Secure student portal login for accessing practice tests, tracking mock scores, and viewing batch schedules at Olympiad Foundation.">
   <link rel="icon" type="image/jpeg" href="assets/images/logo/brand-logo.jpg">
 
   <!-- Tailwind CSS CDN -->
@@ -46,7 +48,9 @@
   <!-- Global Application Scripts -->
   <script src="assets/js/main.js" defer></script>
 </head>
-<body class="bg-slate-50 dark:bg-black text-slate-900 dark:text-white transition-colors duration-200 min-h-screen flex flex-col">
+
+<body
+  class="bg-slate-50 dark:bg-black text-slate-900 dark:text-white transition-colors duration-200 min-h-screen flex flex-col">
 
   <!-- ======================================================================
        BRANDED PRELOADER
@@ -58,7 +62,8 @@
         <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Foundation Crest" class="loader-logo">
       </div>
       <div>
-        <p class="font-heading font-extrabold text-lg text-brand-navy dark:text-white tracking-tight">Olympiad Foundation</p>
+        <p class="font-heading font-extrabold text-lg text-brand-navy dark:text-white tracking-tight">Olympiad
+          Foundation</p>
         <p class="text-xs font-semibold uppercase tracking-widest text-brand-gold">Student Portal</p>
       </div>
     </div>
@@ -70,34 +75,36 @@
   <header class="portal-header" role="banner">
     <!-- Brand Logo + Identity -->
     <a href="index.html" class="flex items-center gap-3 text-decoration-none">
-      <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Crest" class="w-9 h-9 object-contain rounded bg-white p-1 shadow-sm">
+      <img src="assets/images/logo/brand-logo.jpg" alt="Olympiad Crest"
+        class="w-9 h-9 object-contain rounded bg-white p-1 shadow-sm">
       <div class="flex flex-col">
-        <span class="font-heading font-extrabold text-sm text-brand-navy dark:text-white leading-tight">Olympiad Foundation</span>
+        <span class="font-heading font-extrabold text-sm text-brand-navy dark:text-white leading-tight">Olympiad
+          Foundation</span>
         <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider">Student Portal</span>
       </div>
     </a>
 
     <!-- Header Controls: RTL, Theme, Back to Main Website -->
     <div class="flex items-center gap-2.5">
-      <button type="button" class="action-icon-btn rtl-toggle-btn" aria-label="Toggle Direction" title="Toggle Direction">
+      <button type="button" class="action-icon-btn rtl-toggle-btn" aria-label="Toggle Direction"
+        title="Toggle Direction">
         <span class="rtl-indicator-label font-bold text-xs">RTL</span>
       </button>
 
       <button type="button" class="action-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
-        <svg class="w-4 h-4 theme-icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        <svg class="w-4 h-4 theme-icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+          aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
-        <svg class="w-4 h-4 theme-icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        <svg class="w-4 h-4 theme-icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+          aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
         </svg>
       </button>
 
-      <a href="index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-slate-200 dark:border-zinc-800 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:border-brand-gold transition-colors">
-        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        <span>Back to Site</span>
-      </a>
+
     </div>
   </header>
 
@@ -105,15 +112,18 @@
        MAIN SPLIT LOGIN CONTAINER (Matches User Screenshot Reference 2)
        ====================================================================== -->
   <main class="login-split-container flex-1">
-    
+
     <!-- LEFT PANEL: Visual Identity & Inspirational Quote -->
     <div class="login-visual-panel relative text-white">
-      
+
       <!-- Top Eyebrow Badge -->
       <div>
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-amber-300">
-          <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-amber-300">
+          <svg class="w-3.5 h-3.5 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
           </svg>
           <span>Your Personal Olympiad Portal</span>
         </div>
@@ -122,16 +132,19 @@
       <!-- Center Quote -->
       <div class="space-y-4 max-w-lg my-auto py-12">
         <blockquote class="font-heading text-2xl lg:text-3xl font-bold leading-relaxed text-slate-100">
-          &ldquo;Pure proofs, disciplined inquiry, and non-routine problem solving transform curious minds into global medalists.&rdquo;
+          &ldquo;Pure proofs, disciplined inquiry, and non-routine problem solving transform curious minds into global
+          medalists.&rdquo;
         </blockquote>
         <p class="text-xs text-slate-300 leading-relaxed">
-          Access your personalized computer-based test simulation arena, track sub-topic percentile analytics, view doctoral faculty feedback, and download official competition scorecards.
+          Access your personalized computer-based test simulation arena, track sub-topic percentile analytics, view
+          doctoral faculty feedback, and download official competition scorecards.
         </p>
       </div>
 
       <!-- Bottom Trust Badge -->
       <div class="flex items-center gap-2 text-xs font-semibold text-amber-300 pt-4 border-t border-white/10">
-        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+          aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
         </svg>
         <span>100% Confidential Student Academic Ledger & Test Analytics</span>
@@ -142,7 +155,7 @@
     <!-- RIGHT PANEL: Authentication Form (Sign In / Register) -->
     <div class="login-form-panel">
       <div class="auth-card">
-        
+
         <!-- Auth Tab Bar -->
         <div class="flex border-b border-slate-200 dark:border-zinc-800 mb-6">
           <button type="button" class="auth-tab-btn active flex-1 text-center" data-auth-tab="signin">
@@ -154,60 +167,78 @@
         </div>
 
         <!-- Demo Environment Callout Notice Box -->
-        <div class="p-3.5 rounded-xl border border-dashed border-brand-gold/40 bg-brand-gold/5 dark:bg-brand-gold/10 text-xs text-slate-700 dark:text-slate-300 mb-6">
+        <div
+          class="p-3.5 rounded-xl border border-dashed border-brand-gold/40 bg-brand-gold/5 dark:bg-brand-gold/10 text-xs text-slate-700 dark:text-slate-300 mb-6">
           <p class="font-bold text-brand-gold mb-0.5">Demo Environment:</p>
           <p class="leading-relaxed">
-            You can sign in using sample credentials below or click the one-click demo button to explore the dashboard immediately.
+            You can sign in using sample credentials below or click the one-click demo button to explore the dashboard
+            immediately.
           </p>
         </div>
 
         <!-- FORM 1: SIGN IN -->
         <form id="signInForm" action="dashboard.html" method="get" class="space-y-4">
-          
+
           <div>
-            <label for="studentEmail" class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
+            <label for="studentEmail"
+              class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1.5">
               Email or Student Roll Number
             </label>
-            <input type="text" id="studentEmail" name="email" value="aarav.sharma@olympiad.edu" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold transition-colors" placeholder="Enter student email or roll ID">
+            <input type="text" id="studentEmail" name="email" value="aarav.sharma@olympiad.edu" required
+              class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold transition-colors"
+              placeholder="Enter student email or roll ID">
           </div>
 
           <div>
             <div class="flex items-center justify-between mb-1.5">
-              <label for="authPassword" class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+              <label for="authPassword"
+                class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                 Password
               </label>
               <a href="contact.html" class="text-xs font-semibold text-brand-gold hover:underline">Forgot password?</a>
             </div>
             <div class="relative">
-              <input type="password" id="authPassword" name="password" value="Super50#2026" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold transition-colors pr-10" placeholder="••••••••">
-              <button type="button" id="togglePassword" class="absolute right-3 top-2.5 text-slate-400 hover:text-slate-600 dark:hover:text-white" aria-label="Toggle password visibility">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <input type="password" id="authPassword" name="password" value="Super50#2026" required
+                class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold transition-colors pr-10"
+                placeholder="••••••••">
+              <button type="button" id="togglePassword"
+                class="absolute right-3 top-2.5 text-slate-400 hover:text-slate-600 dark:hover:text-white"
+                aria-label="Toggle password visibility">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </button>
             </div>
           </div>
 
           <div class="flex items-center gap-2 pt-1">
-            <input type="checkbox" id="rememberMe" checked class="w-3.5 h-3.5 rounded text-brand-gold focus:ring-brand-gold border-slate-300 dark:border-zinc-700">
+            <input type="checkbox" id="rememberMe" checked
+              class="w-3.5 h-3.5 rounded text-brand-gold focus:ring-brand-gold border-slate-300 dark:border-zinc-700">
             <label for="rememberMe" class="text-xs text-slate-600 dark:text-slate-400 font-medium select-none">
               Remember me on this device
             </label>
           </div>
 
           <div class="pt-2 space-y-2.5">
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-navy hover:bg-slate-800 text-white font-extrabold text-xs transition-colors shadow-sm">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            <button type="submit"
+              class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-navy hover:bg-slate-800 text-white font-extrabold text-xs transition-colors shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
               </svg>
               <span>Sign In to Dashboard</span>
             </button>
 
             <!-- Direct One-Click Demo Button (Matches Screenshot) -->
-            <a href="dashboard.html#overview" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-800 dark:text-white font-extrabold text-xs hover:border-brand-gold transition-colors">
+            <a href="dashboard.html#overview"
+              class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-800 dark:text-white font-extrabold text-xs hover:border-brand-gold transition-colors">
               <span>One-Click Demo Sign In</span>
-              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
@@ -217,33 +248,43 @@
 
         <!-- FORM 2: REGISTRATION (Hidden by default) -->
         <form id="registerForm" action="dashboard.html" method="get" class="space-y-3.5 hidden">
-          
+
           <div>
-            <label for="regName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+            <label for="regName"
+              class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
               Student Full Name
             </label>
-            <input type="text" id="regName" name="name" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold" placeholder="Aarav Sharma">
+            <input type="text" id="regName" name="name" required
+              class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold"
+              placeholder="Aarav Sharma">
           </div>
 
           <div>
-            <label for="regEmail" class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+            <label for="regEmail"
+              class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
               Email Address
             </label>
-            <input type="email" id="regEmail" name="email" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold" placeholder="student@example.com">
+            <input type="email" id="regEmail" name="email" required
+              class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold"
+              placeholder="student@example.com">
           </div>
 
           <div class="grid grid-cols-2 gap-3">
             <div>
-              <label for="regGrade" class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">Grade</label>
-              <select id="regGrade" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs focus:outline-none focus:border-brand-gold">
+              <label for="regGrade"
+                class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">Grade</label>
+              <select id="regGrade"
+                class="w-full px-3 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs focus:outline-none focus:border-brand-gold">
                 <option value="6-8">Grades 6–8 (Junior)</option>
                 <option value="8-10">Grades 8–10 (Qualifier)</option>
                 <option value="11-12">Grades 11–12 (Senior)</option>
               </select>
             </div>
             <div>
-              <label for="regTrack" class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">Primary Track</label>
-              <select id="regTrack" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs focus:outline-none focus:border-brand-gold">
+              <label for="regTrack" class="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">Primary
+                Track</label>
+              <select id="regTrack"
+                class="w-full px-3 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs focus:outline-none focus:border-brand-gold">
                 <option value="math">Mathematics (PRMO)</option>
                 <option value="physics">Physics (NSEP)</option>
                 <option value="chemistry">Chemistry (NSEC)</option>
@@ -253,16 +294,21 @@
           </div>
 
           <div>
-            <label for="regPass" class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+            <label for="regPass"
+              class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
               Create Password
             </label>
-            <input type="password" id="regPass" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold" placeholder="At least 8 characters">
+            <input type="password" id="regPass" required
+              class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white dark:bg-black text-slate-900 dark:text-white text-xs font-medium focus:outline-none focus:border-brand-gold"
+              placeholder="At least 8 characters">
           </div>
 
           <div class="pt-2">
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-gold hover:bg-brand-gold-bright text-black font-extrabold text-xs transition-colors shadow-sm">
+            <button type="submit"
+              class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-gold hover:bg-brand-gold-bright text-black font-extrabold text-xs transition-colors shadow-sm">
               <span>Complete Student Registration</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </button>
@@ -276,4 +322,5 @@
   </main>
 
 </body>
+
 </html>
